@@ -1,0 +1,21 @@
+# Secrets and your real settings
+.env
+.env.*
+!.env.example
+watchdog.config.json
+
+# Runtime files
+state/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/

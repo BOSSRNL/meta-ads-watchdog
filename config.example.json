@@ -1,0 +1,35 @@
+{
+  "dry_run": true,
+  "language": "en",
+  "timezone": "Asia/Manila",
+  "state_dir": "state",
+  "teams": [
+    {
+      "name": "Team A",
+      "ad_accounts": ["act_1111111111", "act_2222222222"],
+      "discord_webhook_env": "DISCORD_WEBHOOK_TEAM_A",
+      "discord_issues_webhook_env": "DISCORD_ISSUES_WEBHOOK"
+    },
+    {
+      "name": "Team B",
+      "ad_accounts": ["act_3333333333"],
+      "discord_webhook_env": "DISCORD_WEBHOOK_TEAM_B",
+      "discord_issues_webhook_env": "DISCORD_ISSUES_WEBHOOK"
+    }
+  ],
+  "rules": {
+    "overspend_tolerance": [[0, 10], [100, 30], [1000, 150], [10000, 250]],
+    "hard_spend_limit": 40000,
+    "anomaly_budget": 45000,
+    "spike_multiplier": 10,
+    "new_campaign_budget": 1000,
+    "new_campaign_hours": 24,
+    "sale_day_pause_multiplier": 2
+  },
+  "sale_days": {
+    "payday_days": [15, 30],
+    "double_days": true,
+    "extra_dates": [],
+    "announce": true
+  }
+}
